@@ -4,5 +4,5 @@ module.exports.run = async (bot, message, args) => {
   message.delete().catch(O_o=>{});
 }
 module.exports.help = {
-  name: "!check"
+  name: ">check"
 }

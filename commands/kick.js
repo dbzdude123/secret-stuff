@@ -12,5 +12,5 @@ return;
 }
 
 module.exports.help = {
-  name: "kick"
+  name: ">kick"
 }
