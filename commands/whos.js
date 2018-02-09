@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     "a horrible person.",
     "disgusting.",
     "somewhat ugly.",
-    "beatiful.",
+    "beautiful.",
     "horrendus.",
     "fat.",
     "ugly.",
