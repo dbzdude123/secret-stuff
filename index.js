@@ -45,4 +45,4 @@ bot.on('guildMemberAdd', member => {
   generalchannel.send(`<@${member.user.id}> Welcome to the universe of love! Check <#${robloxnames.id}>.`);
 });
 
-bot.login(process.env.B0T_T0KEN);
+bot.login(botconfig.token);
