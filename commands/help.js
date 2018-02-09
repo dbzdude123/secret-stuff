@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(">mute @user time", "Mutes the mentioned user for a period of time (For example: 10s)")
   .addField(">report @user reason", "Reports the mentioned user to the staff of the current server.")
   .addField(">purge X", "Deletes the number of messages X in the current channel.");
-  .addField(">whos @user", "Tells you a trait of the mentioned user. **FUN** Feature.");
+  .addField(">whos @user", "Tells you a trait of the mentioned user. **FUN** Feature.")
   message.author.sendMessage(helpEmbed);
   message.reply("Commands have been sent to your DMs.")
 
