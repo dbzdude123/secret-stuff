@@ -32,7 +32,6 @@ module.exports.run = async (bot, message, args) => {
 
     setTimeout(function(){
       mUser.removeRole(muterole.id);
-      message.author.delete;
     }, ms(mutetime));
 }
 module.exports.help = {
