@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     if(!muterole){
       try{
         muterole = await message.guild.createRole({
-          name: "muted",
+          name: "Muted",
           color: "#000000",
           permissions:[]
         })
@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
     setTimeout(function(){
       mUser.removeRole(muterole.id);
-      message.channel.send(`<@${mUser.id}> has been unmuted!`);
+      message.author.delete;
     }, ms(mutetime));
 }
 module.exports.help = {
