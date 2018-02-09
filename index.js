@@ -15,7 +15,7 @@ fs.readdir("./commands/", (err, files) => {
   jsfile.forEach((f, i) => {
     let props = require(`./commands/${f}`);
     console.log(`${f} fully loaded`);
-    bot.user.setActivity("Tournament of Power", {type: "WATCHING"});
+    bot.commands.set(props.help.name, props);
 
   });
 
@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("DBOR");
+  bot.user.setActivity("Tournament of Power", {type: "WATCHING"});
 });
 
 bot.on("message", async message =>{
@@ -45,4 +45,4 @@ bot.on('guildMemberAdd', member => {
   generalchannel.send(`<@${member.user.id}> Welcome to the universe of love! Check <#${robloxnames.id}>.`);
 });
 
-bot.login(process.env.B0T_T0KEN);
+bot.login(botconfig.token);
