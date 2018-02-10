@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
     "77"
   ];
   let maUser1 = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-  let maUser2 = message.guild.member(message.mentions.users.second() || message.guild.members.get(args[1]));
+  let maUser2 = message.guild.member(message.mentions.users.second();
   if(!maUser) return message.channel.send(`${message.author}, you need to specify two users.`);
   if(!maUser2) return message.channel.send(`${message.author}, you need to specify two users.`);
   message.channel.send(`${maUser1} and ${maUser2}  are a match of ` + matchvalue[Math.floor(Math.random() * matchvalue.length)] + `%`);
