@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
   let maUser2 = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!maUser) return message.channel.send(`${message.author}, you need to specify two users.`);
   if(!maUser2) return message.channel.send(`${message.author}, you need to specify two users.`);
-  message.channel.send(`${maUser1} and ${maUser2}  are a match of ` + fortunejar[Math.floor(Math.random() * matchvalue.length)] + `%`);
+  message.channel.send(`${maUser1} and ${maUser2}  are a match of ` + matchvalue[Math.floor(Math.random() * matchvalue.length)] + `%`);
 
 }
 module.exports.help = {
