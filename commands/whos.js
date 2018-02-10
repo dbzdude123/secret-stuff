@@ -34,7 +34,6 @@ module.exports.run = async (bot, message, args) => {
     "gay."
   ];
   let wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-  if(wUser = ">>whos @vida") return message.channel.send("Vida is simply gorgeous, the best there is.");
   if(!wUser) return message.channel.send(`${message.author}, you haven't selected anyone.`);
   message.channel.send(`${wUser}  is ` + fortunejar[Math.floor(Math.random() * fortunejar.length)]);
 
