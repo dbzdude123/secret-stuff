@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.reply("you don't have enough permissions.");
     if(!mUser) return message.reply("Couldn't find user.");
     if(mUser.hasPermission("MANAGE_ROLES")) return message.reply("Can't mute that user!");
-    if(mUser = "Universe 2 Bot") return message.reply(`${message.author} nice try you twat!`);
+    if(mUser = "Universe 2 Bot#410529339147288587") return message.reply(`${message.author} nice try you twat!`);
     let muterole = message.guild.roles.find(`name`, "Muted");
     if(!muterole){
       try{
