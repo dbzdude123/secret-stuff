@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
   message.guild.member(kUser).ban();
   message.channel.send(`${kUser} has been banned by <@${message.author.id}>`)
-  kUser.sendMessage(`${kUser} you've been banned from ${message.guild.name} by ${message.author}`);
+  kUser.sendMessage(`${kUser} you've been banned from ${message.guild.name} by ${message.author}.`);
   return;
 }
 
