@@ -8,6 +8,7 @@ if(kUser.hasPermission("KICK_MEMBERS")) return message.channel.send("That person
 
 message.guild.member(kUser).kick();
 message.channel.send(`${kUser} has been kicked by <@${message.author.id}>`)
+kUser.sendMessage(`${kUser} you've been kicked from ${message.guild.name} by ${message.author}.`);
 return;
 }
 

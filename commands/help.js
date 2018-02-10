@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(">vote statement", "The bot starts a vote with the reactions system.")
   .addField(">whos @user", "Tells you a trait of the mentioned user. **FUN** Feature.");
   message.author.sendMessage(helpEmbed);
-  message.reply("Commands have been sent to your DMs.")
+  message.reply("commands have been sent to your DMs.")
 
 }
 module.exports.help = {

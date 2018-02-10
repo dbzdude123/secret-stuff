@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
   let sicon = message.guild.iconURL;
   let serverembed = new Discord.RichEmbed()
-  .setDescription("**Universe 2 - Dragon Ball Online Revelations**")
+  .setDescription("**Server Information**")
   .setColor("#15f153")
   .setThumbnail(sicon)
   .addField("Server Name", message.guild.name)
