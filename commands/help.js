@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(">ban @user", "Bans the mentioned user from the current server.")
   .addField(">kick @user", "Kicks the mentioned user from the current server.")
   .addField(">mute @user time", "Mutes the mentioned user for a period of time (For example: 10s)")
+  .addField(">unmute @user", "Removes the mute role from the selected user.")
   .addField(">report @user reason", "Reports the mentioned user to the staff of the current server.")
   .addField(">purge X", "Deletes the number of messages X in the current channel.")
   .addField(">vote statement", "The bot starts a vote with the reactions system.")
