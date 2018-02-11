@@ -3,7 +3,6 @@ module.exports.run = async (bot, message, args) => {
   var fortunejar = [
     "very attractive.",
     "very ugly.",
-    "very old.",
     "semi-attractive.",
     "a horrible person.",
     "disgusting.",
@@ -26,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     "an adorable person.",
     "very respective.",
     "very polite.",
-    "very inteligent",
+    "very inteligent.",
     "a serial killer.",
     "a thot.",
     "a killer.",
