@@ -6,7 +6,7 @@ var value2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
   value2touse = value2[Math.floor(Math.random() * values.length)];
 var value3 = [300, 341, 495, 400, 519, 500, 590, 600, 640, 631, 639, 682, 700, 751, 910, 800, 853, 914, 918, 950, 1000, 1500, 3000, 4000, 8000, 900, 30000, 40000],
   value3touse = value3[Math.floor(Math.random() * values.length)];
-message.reply(`your powerlevel is ` + (value1touse*value2touse*value3touse);
+message.channel.send(`your powerlevel is ` + (value1touse*value2touse*value3touse);
 }
 module.exports.help = {
   name: ">powerlevel"
