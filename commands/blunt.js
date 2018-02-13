@@ -1,11 +1,12 @@
 const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
-  let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  let blUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  if(!blUser) return message.channel.send("Can't find user!");
   message.channel.sendMessage({
          "embed": {
-                 title: `${bUser}, ${message.author} has given you a blunt.`,
+                 title: 'Here is your blunt sir.',
                  "image": {
-                 "url": "https://c2.staticflickr.com/4/3217/2673780960_a1d306aa48_o.png",
+                 "url": "http://moziru.com/images/marijuana-clipart-mlg-14.png",
                  }
              }
          });
