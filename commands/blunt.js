@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
   if(!blUser) return message.channel.send("Can't find user!");
   message.channel.sendMessage({
          "embed": {
-                 title: 'Here is your blunt sir.',
+                 title: 'Here is your blunt sir/miss.',
                  "image": {
                  "url": "http://moziru.com/images/marijuana-clipart-mlg-14.png",
                  }
