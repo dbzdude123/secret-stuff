@@ -30,6 +30,7 @@ module.exports.run = async (bot, message, args) => {
     "a thot.",
     "a killer.",
     "an addict.",
+    "a turd.",
     "gay."
   ];
   let wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
