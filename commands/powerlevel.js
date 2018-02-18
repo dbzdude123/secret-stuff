@@ -3,7 +3,7 @@ module.exports.run = async (bot, message, args) => {
   let plUser = message.author
   message.channel.send({embed: {
   color: Math.floor(Math.random() * 16777214) + 1,
-  description: `${plUser} ` + 'your power level is `' + `${Math.floor(Math.random() * 9677721412) * 2}`
+  description: `${plUser} ` + 'your power level is `' + Math.floor(Math.random() * 9677721412) * 2
 }});
 
 }
