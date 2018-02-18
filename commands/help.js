@@ -12,6 +12,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(">>purge X", "Deletes the number of messages X in the current channel.")
   .addField(">>vote statement", "The bot starts a vote with the reactions system.")
   .addField(">>whos @user", "Tells you a trait of the mentioned user. **FUN** Feature.");
+  .addField(">>powerlevel", "The bot uses its scouter to calculate your powerlevel.");
   message.author.sendMessage(helpEmbed);
   message.reply("commands have been sent to your DMs.")
 

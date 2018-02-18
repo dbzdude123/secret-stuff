@@ -14,7 +14,7 @@ fs.readdir("./commands/", (err, files) => {
   }
   jsfile.forEach((f, i) => {
     let props = require(`./commands/${f}`);
-    console.log(`${f} fully loaded`);
+    console.log(`${f} loaded`);
     bot.commands.set(props.help.name, props);
 
   });
@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("T.O.P | >>help", {type: "WATCHING"});
+  bot.user.setActivity("Tournament of Power | >>help", {type: "WATCHING"});
 });
 
 bot.on("message", async message =>{
