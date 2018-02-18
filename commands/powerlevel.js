@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
   let idUser = message.author.id
   message.channel.send({embed: {
   color: Math.floor(Math.random() * 16777214) + 1,
-  description: `${plUser} ` + 'your power level is ' + idUser * message.author.length
+  description: `${plUser} ` + 'your power level is ' + idUser * 3
 }});
 
 }
