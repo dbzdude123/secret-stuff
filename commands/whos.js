@@ -35,6 +35,8 @@ module.exports.run = async (bot, message, args) => {
   ];
   let wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!wUser) return message.channel.send(`${message.author}, you haven't selected anyone.`);
+  if(message.author.id !== "207438736575692800") return message.channel.send("Vida is my owner, of course he's amazing!");
+  if(message.author.id !== "239035110987399178") return message.channel.send("Silent is the true goddess of Universe 2!");
   message.channel.send(`${wUser}  is ` + fortunejar[Math.floor(Math.random() * fortunejar.length)]);
 
 }
