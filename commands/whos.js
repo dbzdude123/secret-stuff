@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
     "gay."
   ];
   let wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-  if(!wUser) return message.channel.send(`${message.author}, you haven't selected anyone.`);
+  if(!wUser) return message.channel.send(`${message.author}, you haven't selected/mentioned anyone.`);
   if(wUser.id == "207438736575692800") return message.channel.send("Vida is the most awesome person in the world.");
   if(wUser.id == "239035110987399178") return message.channel.send("Silent is the true goddess of Universe 2!");
   if(wUser.id == "174558357363884041") return message.channel.send("Fearless is obviously gay, just look at him.");
