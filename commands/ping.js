@@ -3,7 +3,7 @@ module.exports.run = async (bot, message, args) => {
   let puser = message.author
   message.channel.send({embed: {
   color: Math.floor(Math.random() * 16777214) + 1,
-  description: `${puser} ` + 'your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`'
+  description: `${puser} ` + 'your ping is `' + `${Date.now() - message.createdTimestamp}` + ' milliseconds`'
 }});
 }
 module.exports.help = {
