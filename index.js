@@ -28,7 +28,7 @@ bot.on("ready", async () => {
 });
 
 music(Bot, {
-	prefix: '-',
+	prefix: '>>',
 	global: false,
 	maxQueueSize: 20,
 	clearInvoker: true,
