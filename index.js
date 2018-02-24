@@ -1,5 +1,6 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
+const music = require('discord.js-music-v11');
 const fs = require("fs");
 const mysql = require("mysql");
 const bot = new Discord.Client();
