@@ -12,6 +12,7 @@
     "discord.js": "^11.3.0",
     "ffmpeg-binaries": "^3.2.2-3",
     "ms": "^2.1.1",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "opusscript": "0.0.6"
   }
 }
