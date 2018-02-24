@@ -40,18 +40,12 @@ bot.on("message", async message =>{
 
 });
 
-music(bot, {
-	prefix: '>>',
-	global: false,
-	maxQueueSize: 20,
-	clearInvoker: true,
-    channel: 'Music'
-});
 
 bot.on('guildMemberAdd', member => {
   const generalchannel = member.guild.channels.find(`name`, "general");
   const robloxnames = member.guild.channels.find(`name`, "roblox-names");
   generalchannel.send(`<@${member.user.id}> Welcome to the universe of love! Check <#${robloxnames.id}>.`);
 });
+
 
 bot.login(process.env.B0T_T0KEN);
