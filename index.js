@@ -1,11 +1,8 @@
-const botconfig = require("./botconfig.json");
+const config = require("./config.json");
 const Discord = require("discord.js");
-const music = require('discord.js-music-v11');
 const fs = require("fs");
 const mysql = require("mysql");
 const bot = new Discord.Client();
-const YoutubeDL = require('youtube-dl');
-const ytdl = require('ytdl-core');
 bot.commands = new Discord.Collection()
 
 fs.readdir("./commands/", (err, files) => {
@@ -29,12 +26,11 @@ bot.on("ready", async () => {
   bot.user.setActivity("DBSuper | >>help", {type: "WATCHING"});
 });
 
-
 bot.on("message", async message =>{
  if(message.author.bot) return;
  if(message.channel.type === "dm") return;
- let prefix = botconfig.prefix;
- let token = botconfig.token;
+ let prefix = config.commandPrefix;
+ let token = config.token;
  let messageArray = message.content.split(" ");
  let cmd = messageArray[0];
  let args = messageArray.slice(1);
@@ -42,13 +38,6 @@ bot.on("message", async message =>{
  if(commandfile) commandfile.run(bot,message,args);
 });
 
-music(bot, {
-	prefix: '>',
-	global: false,
-	maxQueueSize: 10,
-	clearInvoker: true,
-    channel: 'Music'
-});
 
 bot.on('guildMemberAdd', member => {
   const generalchannel = member.guild.channels.find(`name`, "general");
@@ -58,4 +47,4 @@ bot.on('guildMemberAdd', member => {
 
 
 
-bot.login("NDEwNTI5MzM5MTQ3Mjg4NTg3.DXMT9w.Dn0B5Ky3NAJCjhaZGbWnE5fMIsU");
+bot.login(process.env.B0T_T0KEN);
