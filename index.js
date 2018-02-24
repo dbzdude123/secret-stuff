@@ -27,6 +27,14 @@ bot.on("ready", async () => {
   bot.user.setActivity("DBSuper | >>help", {type: "WATCHING"});
 });
 
+music(Bot, {
+	prefix: '-',
+	global: false,
+	maxQueueSize: 20,
+	clearInvoker: true,
+    channel: 'Music'
+});
+
 bot.on("message", async message =>{
  if(message.author.bot) return;
  if(message.channel.type === "dm") return;
