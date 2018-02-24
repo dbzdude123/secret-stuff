@@ -4,6 +4,8 @@ const music = require('discord.js-music-v11');
 const fs = require("fs");
 const mysql = require("mysql");
 const bot = new Discord.Client();
+const YoutubeDL = require('youtube-dl');
+const ytdl = require('ytdl-core');
 bot.commands = new Discord.Collection()
 
 fs.readdir("./commands/", (err, files) => {
