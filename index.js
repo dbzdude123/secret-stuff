@@ -38,7 +38,14 @@ bot.on("message", async message =>{
  let args = messageArray.slice(1);
  let commandfile = bot.commands.get(cmd.slice(prefix.length));
  if(commandfile) commandfile.run(bot,message,args);
+});
 
+music(bot, {
+	prefix: '>',
+	global: false,
+	maxQueueSize: 10,
+	clearInvoker: true,
+    channel: 'Music'
 });
 
 bot.on('guildMemberAdd', member => {
@@ -47,12 +54,6 @@ bot.on('guildMemberAdd', member => {
   generalchannel.send(`<@${member.user.id}> Welcome to the universe of love! Check <#${robloxnames.id}>.`);
 });
 
-music(bot, {
-	prefix: '-',
-	global: false,
-	maxQueueSize: 20,
-	clearInvoker: true,
-    channel: 'Music'
-});
 
-bot.login(process.env.B0T_T0KEN);
+
+bot.login("NDEwNTI5MzM5MTQ3Mjg4NTg3.DXMT9w.Dn0B5Ky3NAJCjhaZGbWnE5fMIsU");
