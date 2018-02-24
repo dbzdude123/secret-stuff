@@ -27,7 +27,7 @@ bot.on("ready", async () => {
   bot.user.setActivity("DBSuper | >>help", {type: "WATCHING"});
 });
 
-music(Bot, {
+music(bot, {
 	prefix: '>>',
 	global: false,
 	maxQueueSize: 20,
@@ -54,4 +54,4 @@ bot.on('guildMemberAdd', member => {
   generalchannel.send(`<@${member.user.id}> Welcome to the universe of love! Check <#${robloxnames.id}>.`);
 });
 
-bot.login(process.env.B0T_T0KEN);
+bot.login(bot.login(process.env.B0T_T0KEN);
