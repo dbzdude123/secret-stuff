@@ -27,14 +27,6 @@ bot.on("ready", async () => {
   bot.user.setActivity("DBSuper | >>help", {type: "WATCHING"});
 });
 
-music(bot, {
-	prefix: '>>',
-	global: false,
-	maxQueueSize: 20,
-	clearInvoker: true,
-    channel: 'Music'
-});
-
 bot.on("message", async message =>{
  if(message.author.bot) return;
  if(message.channel.type === "dm") return;
@@ -46,6 +38,14 @@ bot.on("message", async message =>{
  let commandfile = bot.commands.get(cmd.slice(prefix.length));
  if(commandfile) commandfile.run(bot,message,args);
 
+});
+
+music(bot, {
+	prefix: '>>',
+	global: false,
+	maxQueueSize: 20,
+	clearInvoker: true,
+    channel: 'Music'
 });
 
 bot.on('guildMemberAdd', member => {
